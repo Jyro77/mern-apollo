@@ -1,0 +1,2 @@
+docker run --name graphqldb -p 27017:27017 -d mongo
+2e13955c317f4343c1a8842b9963323367ae5290a22c593fe46f04ba2c006fd8
