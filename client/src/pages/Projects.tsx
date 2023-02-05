@@ -1,5 +1,5 @@
-import ProjectForm from "../components/ProjectForm";
-import ProjectList from "../components/ProjectList";
+import ProjectForm from "../components/projects/ProjectForm";
+import ProjectList from "../components/projects/ProjectList";
 
 function Projects() {
     return (

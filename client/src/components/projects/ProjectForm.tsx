@@ -1,6 +1,6 @@
-import React, { useState, ChangeEvent, SyntheticEvent } from "react";
+import { useState, ChangeEvent, SyntheticEvent } from "react";
 import { useMutation } from "@apollo/client";
-import { CREATE_PROJECT, GET_PROJECTS } from "../graphql/projects";
+import { CREATE_PROJECT, GET_PROJECTS } from "../../graphql/projects";
 
 function ProjectForm() {
     const [project, setProject] = useState<{
