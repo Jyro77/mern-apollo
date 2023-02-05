@@ -6,12 +6,6 @@ interface props {
     _id: string;
     name: string;
     description: string;
-    /*     tasks: [
-        {
-            _id: string;
-            title: string;
-        },
-    ]; */
 }
 
 function ProjectList() {
@@ -21,7 +15,7 @@ function ProjectList() {
     if (error) return <p>Error</p>;
 
     return (
-        <div>
+        <div className='overflow-y-auto w-full px-5'>
             {data.projects.map(({ _id, name, description }: props) => (
                 <ProjectCard
                     key={_id}

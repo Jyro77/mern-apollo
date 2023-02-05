@@ -32,8 +32,14 @@ export default function TaskForm() {
                 name='title'
                 onChange={handlerChange}
                 value={title}
+                className='bg-zinc-900 text-white w-full p-2 rounded-lg mb-2'
+                placeholder='Add Task'
             />
-            <button disabled={!title || loading}>Submit</button>
+            <button
+                disabled={!title || loading}
+                className='bg-blue-500 w-full px-4 py-1 rounded-md text-lg mb-3 disabled:bg-zinc-400'>
+                Submit
+            </button>
         </form>
     );
 }

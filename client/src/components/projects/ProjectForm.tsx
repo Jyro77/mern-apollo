@@ -42,7 +42,7 @@ function ProjectForm() {
         });
     };
     return (
-        <form onSubmit={handlerSubmit}>
+        <form onSubmit={handlerSubmit} className='w-2/5'>
             {error && <p>{error.message}</p>}
             <input
                 type='text'
@@ -50,14 +50,18 @@ function ProjectForm() {
                 placeholder='Title of project'
                 onChange={handlerChange}
                 value={project.name}
+                className='bg-zinc-800 text-white rounded-lg shadow-lg shadow-black p-4 block w-full mb-3'
             />
             <textarea
                 name='description'
                 rows={3}
                 placeholder='Description...'
                 onChange={handlerChange}
-                value={project.description}></textarea>
-            <button disabled={!project.name || !project.description || loading}>
+                value={project.description}
+                className='bg-zinc-800 text-white rounded-lg shadow-lg shadow-black p-4 block w-full mb-3'></textarea>
+            <button
+                disabled={!project.name || !project.description || loading}
+                className='bg-blue-500 px-4 py-1 rounded-md text-lg mb-3 disabled:bg-zinc-400'>
                 Submit
             </button>
         </form>
